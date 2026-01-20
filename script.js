@@ -58,3 +58,13 @@ const primerIndiceMayorDiez = arrA.findIndex(n => n > 10);
 console.log("Suma de los dos arrays:", sumaMatrices);
 console.log("Multiplicación por índice:", porIndice);
 console.log("Índice del primer mayor que 10:", primerIndiceMayorDiez);
+
+// --- EJERCICIO 6: Juego de palabras ---
+const arrFrase = ["La", "vida", "es", "bella", "y", "divertida"];
+const fraseUnida = arrFrase.reduce((accum, palabra) => accum + " " + palabra);
+const fraseInvertida = [...arrFrase].reverse();
+const contieneBella = arrFrase.includes("bella");
+
+console.log("Frase reconstruida:", fraseUnida);
+console.log("En el orden inverso:", fraseInvertida);
+console.log("¿Contiene  la palabra bella?:", contieneBella);
