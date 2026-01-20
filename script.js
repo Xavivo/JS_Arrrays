@@ -19,3 +19,21 @@ console.log("Mayúsculas:", ciudadesMayus);
 console.log("Por orden alfabético:", ciudadesOrdenadas);
 console.log("Empieza con M:", empiezaConM);
 console.log("Con 4 letras o más: ", todasLargas);
+
+// EJERCICIO 3: Organización de datos
+const arrEstudiantes = [
+    { nombre: "Fran", edad: 20, nota: 3 },
+    { nombre: "Álvaro", edad: 32, nota: 1 },
+    { nombre: "Alberto", edad: 19, nota: 8 },
+    { nombre: "Lolo", edad: 19, nota: 10 }
+];
+
+const aprobados = arrEstudiantes.filter(e => e.nota >= 5);
+const porEdad = arrEstudiantes.sort((a, b) => a.edad - b.edad);
+const soloNombres = arrEstudiantes.map(e => e.nombre);
+const notaPromedio = arrEstudiantes.reduce((accum, e) => accum + e.nota, 0) / arrEstudiantes.length;
+
+console.log("Aprobados:", aprobados);
+console.log("Ordenadpos por edad:", porEdad);
+console.log("Solo los nombres:", soloNombres);
+console.log("Promedio de notas:", notaPromedio);
