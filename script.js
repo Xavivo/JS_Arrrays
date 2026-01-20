@@ -34,6 +34,16 @@ const soloNombres = arrEstudiantes.map(e => e.nombre);
 const notaPromedio = arrEstudiantes.reduce((accum, e) => accum + e.nota, 0) / arrEstudiantes.length;
 
 console.log("Aprobados:", aprobados);
-console.log("Ordenadpos por edad:", porEdad);
+console.log("Ordenadpos por edad ascendente:", porEdad);
 console.log("Solo los nombres:", soloNombres);
 console.log("Promedio de notas:", notaPromedio);
+
+// EJERCICIO 4: Análisis de palabras
+const palabras = ["pinguino", "sopa", "css", "cactus", "horno", "mapache"];
+const masDeCinco = palabras.filter(p => p.length > 5);
+const invertidas = palabras.map(p => p.split("").reverse().join(""));
+const ordenLongitud = [...palabras].sort((a, b) => a.length - b.length);
+
+console.log("Más de 5 letras:", masDeCinco);
+console.log("Invertidas:", invertidas);
+console.log("Ordenadas por longitud:", ordenLongitud);
