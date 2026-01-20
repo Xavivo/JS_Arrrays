@@ -59,7 +59,7 @@ console.log("Suma de los dos arrays:", sumaMatrices);
 console.log("Multiplicación por índice:", porIndice);
 console.log("Índice del primer mayor que 10:", primerIndiceMayorDiez);
 
-// --- EJERCICIO 6: Juego de palabras ---
+// EJERCICIO 6: Juego de palabras
 const arrFrase = ["La", "vida", "es", "bella", "y", "divertida"];
 const fraseUnida = arrFrase.reduce((accum, palabra) => accum + " " + palabra);
 const fraseInvertida = [...arrFrase].reverse();
@@ -68,3 +68,14 @@ const contieneBella = arrFrase.includes("bella");
 console.log("Frase reconstruida:", fraseUnida);
 console.log("En el orden inverso:", fraseInvertida);
 console.log("¿Contiene  la palabra bella?:", contieneBella);
+
+// EJERCICIO 7: Estadísticas rápidas
+const aleatorios = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 1);
+const maximo = Math.max(...aleatorios);
+const minimo = Math.min(...aleatorios);
+const impares = aleatorios.filter(n => n % 2 !== 0);
+
+console.log("Array aleatorio:", aleatorios);
+console.log("Máximo:", maximo);
+console.log("Mínimo:", minimo);
+console.log("Cantidad de impares:", impares.length);
