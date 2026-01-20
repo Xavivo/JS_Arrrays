@@ -70,9 +70,9 @@ console.log("En el orden inverso:", fraseInvertida);
 console.log("¿Contiene  la palabra bella?:", contieneBella);
 
 // EJERCICIO 7: Estadísticas rápidas
-const aleatorios = Array.from({ length: 10 }, () => Math.floor(Math.random() * 100) + 1);
-const maximo = Math.max(...aleatorios);
-const minimo = Math.min(...aleatorios);
+const aleatorios = Array.from({length: 10}, () => Math.floor(Math.random() * 100) + 1);
+const maximo = Math.max(aleatorios);
+const minimo = Math.min(aleatorios);
 const impares = aleatorios.filter(n => n % 2 !== 0);
 
 console.log("Array aleatorio:", aleatorios);
