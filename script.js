@@ -47,3 +47,14 @@ const ordenLongitud = [...palabras].sort((a, b) => a.length - b.length);
 console.log("Más de 5 letras:", masDeCinco);
 console.log("Invertidas:", invertidas);
 console.log("Ordenadas por longitud:", ordenLongitud);
+
+// EJERCICIO 5: Operaciones con matrices
+const arrA = [5, 12, 8, 20];
+const arrB = [10, 2, 4, 1];
+const sumaMatrices = arrA.map((num, i) => num + arrB[i]);
+const porIndice = arrA.map((num, i) => num * i);
+const primerIndiceMayorDiez = arrA.findIndex(n => n > 10);
+
+console.log("Suma de los dos arrays:", sumaMatrices);
+console.log("Multiplicación por índice:", porIndice);
+console.log("Índice del primer mayor que 10:", primerIndiceMayorDiez);
